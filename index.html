@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <title>Hacienda Inn</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="menu.css">
+        <link rel="stylesheet" href="login.css">
+        <link rel="stylesheet" href="responsive.css">
+        <link rel="stylesheet" href="about.css">
+        <link rel="stylesheet" href="pages.css">
+        <link rel="stylesheet" href="contact.css">
+        <link rel="stylesheet" href="recent-review.css">
+        <link rel="stylesheet" href="tabletview.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="hamburger" id="hamburger-menu">&#9776;</div>
+                <ul id="nav-links">
+                    <i id="logo-text">
+                        <img src="menu-pics/hacienda-inn-logo.png" alt="hacienda-inn-logo">
+                        <b>Hacienda Inn</b>
+                    </i>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#pages">Pages</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a id="loginBtn" href="login.html" target="_top">Book a table</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="home">
+            <div class="background">
+                <div class="top-bar">
+                    <p><i class="fa fa-phone" style="font-size: 15px;"></i> (414) 857 - 0107</p>
+                    <p><i class="fa fa-envelope" style="font-size: 15px;"></i> haciendainn@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div id="shape">
+                    <!-- Left button -->
+                    <button id="home-button1" class="btn" onclick="changeImage(-1)"> < </button>
+        
+                    <!-- Carousel items -->
+                    <div class="carousel-item">
+                        <img src="pictures/burger-menu.jpg" alt="burger" id="burger" class="carousel-image">
+                        <span class="carousel-text">Burger</span>
+                    </div>
+        
+                    <div class="carousel-item">
+                        <img src="pictures/chami.jpg" alt="chami" id="burger" class="carousel-image">
+                        <span class="carousel-text">Chami</span>
+                    </div>
+        
+                    <div class="carousel-item">
+                        <img src="pictures/taipao.png" alt="taipao" id="burger" class="carousel-image">
+                        <span class="carousel-text">Taipao</span>
+                    </div>
+        
+                    <!-- Right button -->
+                    <button id="home-button2" class="btn" onclick="changeImage(1)"> ></button>
+                </div>
+            </div>
+
+            <div class="home-content">
+                <h1 id="recent-text"> Recent post </h1>
+
+                <div id="recent-post">
+                    <img src="pictures\chami.jpg" alt="chami" id="chami">
+                    <img src="pictures\taipao.png" alt="taipao" id="taipao">
+                    <img src="pictures\habhab.jpg" alt="habhab" id="habhab">
+                </div>
+
+                <h1 id="review-text">Pinned Review</h1>
+                <div id="recent-review">
+                    <div class="review-wrapper">
+                        <!-- Original reviews -->
+                        <div class="malupiton-review">
+                            <img src="pictures/malupiton.jpg" alt="malupiton" class="malupiton">
+                            <div class="star-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <h1 class="review-name">Malupiton</h1>
+                            <p>Great food and good vibes! Perfect for laughs with friends. Just don't be shocked by the bill!</p>
+
+                        </div>
+                        <div class="malupiton-review">
+                            <img src="pictures/jobert.jpg" alt="jobert" class="malupiton">
+                            <div class="star-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <h1 class="review-name">Jobert Rosh</h1>
+                            <p>It's a beautiful place.. lovely creative tasty Chami.. Siopao are to die for!</p>
+
+                        </div>
+                        <div class="malupiton-review">
+                            <img src="pictures/otlum.jpg" alt="mima" class="malupiton">
+                            <div class="star-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <h1 class="review-name">Mima Otlum</h1>
+                            <p>Has become my regular place to buy Chami. Wonderful taste and economical price.</p>
+
+                        </div>
+                        <div class="malupiton-review">
+                            <img src="pictures/josh.jpg" alt="josh" class="malupiton">
+                            <div class="star-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <h1 class="review-name">Josh Mojica</h1>
+                            <p>It's a good place for a budget foodie. The Pancit and desserts are my choice here.</p>
+
+                        </div>
+                        <div class="malupiton-review">
+                            <img src="pictures/beluga.jpg" alt="beluga" class="malupiton">
+                            <div class="star-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <h1 class="review-name">Beluga</h1>
+                            <p>My favorite place. Fresh ingredients with a catalog to customize your food.</p>
+                        </div>
+                        <div class="malupiton-review">
+                            <img src="pictures/trevor.jpg" alt="Trevor" class="malupiton">
+                            <div class="star-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <h1 class="review-name">Trevor</h1>
+                            <p>Good place to hang out with friends and family. Very economical and great food quality.</p>
+                        </div>
+                        <!-- Duplicate reviews for seamless scrolling -->
+                        <div class="malupiton-review">
+                            <img src="pictures/malupiton.jpg" alt="malupiton" class="malupiton">
+                            <div class="star-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <h1 class="review-name">Malupiton</h1>
+                            <p>Great food and good vibes! Perfect for laughs with friends. Just don't be shocked by the bill!</p>
+                        </div>
+                        <div class="malupiton-review">
+                            <img src="pictures/jobert.jpg" alt="jobert" class="malupiton">
+                            <div class="star-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <h1 class="review-name">Jobert Rosh</h1>
+                            <p>It's a beautiful place.. lovely creative tasty Chami.. Siopao are to die for!</p>
+                        </div>
+                        <div class="malupiton-review">
+                            <img src="pictures/otlum.jpg" alt="mima" class="malupiton">
+                            <div class="star-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <h1 class="review-name">Mima Otlum</h1>
+                            <p>Has become my regular place to buy Chami. Wonderful taste and economical price.</p>
+                        </div>
+                        <div class="malupiton-review">
+                            <img src="pictures/josh.jpg" alt="josh" class="malupiton">
+                            <div class="star-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <h1 class="review-name">Josh Mojica</h1>
+                            <p>It's a good place for a budget foodie. The Pancit and desserts are my choice here.</p>
+
+                        </div>
+                        <div class="malupiton-review">
+                            <img src="pictures/beluga.jpg" alt="beluga" class="malupiton">
+                            <div class="star-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <h1 class="review-name">Beluga</h1>
+                            <p>My favorite place. Fresh ingredients with a catalog to customize your food.</p>
+                        </div>
+                        <div class="malupiton-review">
+                            <img src="pictures/trevor.jpg" alt="Trevor" class="malupiton">
+                            <div class="star-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <h1 class="review-name">Trevor</h1>
+                            <p>Good place to hang out with friends and family. Very economical and great food quality.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </section>
+
+        <section id="about">
+
+            <div class="about-background">
+                <div class="top-bar">
+                    <p><i class="fa fa-phone" style="font-size: 15px;"></i> (414) 857 - 0107</p>
+                    <p><i class="fa fa-envelope" style="font-size: 15px;"></i> haciendainn@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <p id="first-paragraph"><b>Who We Are</b></p>
+                <p id="second-paragraph">The most important thing for us is to give you the <br>comfortable dining experience</p>
+            </div>  
+            
+            <div class="container">
+                <div class="image-section">
+                <img src="pictures\pasta.jpg" alt="Making pasta">
+                <div class="contact-box">
+                    <h3>Come and visit us</h3>
+                    <p><strong>📞</strong> (414) 857 – 0107</p>
+                    <p><strong>📧</strong> haciendainn@gmail.com</p>
+                    <p><strong>📍</strong> 33 Magallanes St, Lucena, 4301 Quezon</p>
+                </div>
+                </div>
+                <div class="text-section">
+                <h1>Our Story</h1>
+                    <p>
+                        Our story began with a vision to create a unique dining <br>
+                        experience that merges fine dining, exceptional service, and a <br>
+                        vibrant ambiance. Rooted in the city’s rich culinary culture, we aim <br>
+                        to honor our local roots while infusing a global palate.
+                    </p>
+                    <p>
+                        At our place, we believe dining goes beyond just the food—it’s about <br>
+                        the entire experience. Our team, known for their friendliness and <br>
+                        commitment, works hard to ensure each visit is a memorable <br>
+                        occasion.
+                    </p>
+                </div>
+            </div>
+            <div class="container-2">
+                <div class="content">
+                    <h1>A little information <br>
+                        for our valuable guest</h1>
+                    <p>
+                        At our place, we see dining as more than just enjoying a meal—it's about the<br>
+                        complete experience. Our staff, celebrated with their friendliness and<br>
+                        devotion, are committed to making every visit truly memorable<br>
+                        occasion.
+                    </p>
+                    <div class="stats">
+                        <div class="stat-box">
+                            <h2>2</h2>
+                            <p>Locations</p>
+                        </div>
+                        <div class="stat-box">
+                            <h2>1881</h2>
+                            <p>Founded</p>
+                        </div>
+                        <div class="stat-box">
+                            <h2>10+</h2>
+                            <p>Staff Members</p>
+                        </div>
+                        <div class="stat-box">
+                            <h2>100%</h2>
+                            <p>Satisfied Customers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <img src="pictures\cooking.jpg" alt="Delicious noodles">
+                </div>
+            </div>       
+        </section>
+
+        <section id="menu">
+            <div class="background-menu">
+                <div class="top-bar">
+                    <p><i class="fa fa-phone" style="font-size: 15px;"></i> (414) 857 - 0107</p>
+                    <p><i class="fa fa-envelope" style="font-size: 15px;"></i> haciendainn@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <p id="text-menu">"Savor the finest flavors, crafted with passion <br> and served with care"</p>
+                <h1 id="title-menu">Menu</h1>
+            </div>
+
+            <div id="menu-content">
+                <div class="menu-section">
+                    <h2>Sandwiches</h2>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <img src="menu-pics\cheese-sandwich.jpg" alt="Cheese Sandwich">
+                            <p>Cheese Sandwich</p>
+                            <p>₱50.00</p>
+                        </div>
+                        <div class="menu-item">
+                            <img src="menu-pics\egg-sandwich.jpg" alt="Egg Sandwich">
+                            <p>Egg Sandwich</p>
+                            <p>₱50.00</p>
+                        </div>
+                        <div class="menu-item">
+                            <img src="menu-pics\ham-egg-sandwich.jpg" alt="Ham & Egg Sandwich">
+                            <p>Ham & Egg Sandwich</p>
+                            <p>₱60.00</p>
+                        </div>
+                        <div class="menu-item">
+                            <img src="menu-pics\hotdog-sandwich.jpg" alt="Hotdog Sandwich">
+                            <p>Hotdog Sandwich</p>
+                            <p>₱60.00</p>
+                        </div>
+                        <div class="menu-item">
+                            <img src="menu-pics\clubhouse-sandwich.jpg" alt="Clubhouse Sandwich">
+                            <p>Clubhouse Sandwich</p>
+                            <p>₱80.00</p>
+                        </div>
+                        <div class="menu-item">
+                            <img src="menu-pics\chicken-sandwich.jpg" alt="Chicken Sandwich">
+                            <p>Chicken Sandwich</p>
+                            <p>₱50.00</p>
+                    </div>
+                </div>
+            
+                <div class="drink-section">
+                    <h2>Drinks</h2>
+                    <div class="drink-items">
+                        <div class="drink-item">
+                            <img src="menu-pics\hot-coffee.jpg" alt="Hot Coffee">
+                            <p>Hot Coffee</p>
+                            <p>₱25.00</p>
+                        </div>
+                        <div class="drink-item">
+                            <img src="menu-pics\Hot-Tea.jpg" alt="Hot Tea">
+                            <p>Hot Tea</p>
+                            <p>₱25.00</p>
+                        </div>
+                        <div class="drink-item">
+                            <img src="menu-pics\Milk-Hot-Cold.jpg" alt="Milk Hot/Cold">
+                            <p>Milk Hot/Cold</p>
+                            <p>₱28.00</p>
+                        </div>
+                        <div class="drink-item">
+                            <img src="menu-pics\Ice-tea.jpg" alt="Ice Tea">
+                            <p>Iced tea</p>
+                            <p>₱60.00</p>
+                        </div>
+                        <div class="drink-item">
+                            <img src="menu-pics\Pineapple-Juice.jpg" alt="Pineapple Juice">
+                            <p>Pineapple Juice</p>
+                            <p>₱70.00</p>
+                        </div>
+                        <div class="drink-item">
+                            <img src="menu-pics\Mango-Juice.jpg" alt="Mango Juice">
+                            <p>Mango Juice</p>
+                            <p><b>₱90.00</b></p>
+                        </div>
+                        <div class="drink-item">
+                            <img src="menu-pics\Beer.jpg" alt="Beer">
+                            <p>Beer</p>
+                            <p><b>₱80.00</b></p>
+                    </div>
+                </div>
+                <div class="dessert-section">
+                    <h2>Desserts</h2>
+                    <div class="dessert-items">
+                        <div class="dessert-item">
+                            <img src="menu-pics\ice-cream.png" alt="Ice Cream">
+                            <p>Ice Cream</p>
+                            <p>₱50.00</p>
+                        </div>
+                        <div class="dessert-item">
+                            <img src="menu-pics\fruit-salad.png" alt="Fruit Salad">
+                            <p>Fruit Salad</p>
+                            <p>₱80.00</p>
+                        </div>
+                        <div class="dessert-item">
+                            <img src="menu-pics\mais-con-yelo.png" alt="Mais Con Yelo">
+                            <p>Mais Con Yelo</p>
+                            <p>₱80.00</p>
+                        </div>
+                        <div class="dessert-item">
+                            <img src="menu-pics\halo-halo.png" alt="Halo Halo">
+                            <p>Halo Halo</p>
+                            <p>₱80.00</p>
+                        </div>
+                        <div class="dessert-item">
+                            <img src="menu-pics\leche-plan.png" alt="Leche Plan">
+                            <p>Leche Plan</p>
+                            <p>₱80.00</p>
+                        </div>
+                </div>
+                <div class="old-favorites-section">
+                    <h2>Old-Favorites</h2>
+                    <div class="old-favorites-items">
+                        <div class="old-favorites-item">
+                            <img src="menu-pics\chami-sml.png" alt="Chami">
+                            <p>Chami</p>
+                            <p>Small/Medium/Large</p>
+                        </div>
+                        <div class="old-favorites-item">
+                            <img src="menu-pics\spag-w-bread.png" alt="Spaghetti With Bread">
+                            <p>Spaghetti With Bread</p>
+                            <p>Solo</p>
+                        </div>
+                        <div class="old-favorites-item">
+                            <img src="menu-pics\kimio.png" alt="Kimio">
+                            <p>Kimio</p>
+                            <p>Small/Medium/Large</p>
+                        </div>
+                        <div class="old-favorites-item">
+                            <img src="menu-pics\peking-noodles.png" alt="Peking Noodles">
+                            <p>Peking Noodles</p>
+                            <p>Medium/Large</p>
+                        </div>
+                        <div class="old-favorites-item">
+                            <img src="menu-pics\chopseuy.png" alt="Chopsuey">
+                            <p>Chopsuey</p>
+                            <p>Medium/Large</p>
+                        </div>
+                        <div class="old-favorites-item">
+                            <img src="menu-pics\fou yo.png" alt="Fou Yong">
+                            <p>Fou Yong</p>
+                            <p><b>Medium/Large</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="pages">
+            <div class="pages-background">
+                <div class="top-bar">
+                    <p><i class="fa fa-phone" style="font-size: 15px;"></i> (414) 857 - 0107</p>
+                    <p><i class="fa fa-envelope" style="font-size: 15px;"></i> haciendainn@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <p id="pages-text">"Welcome to Hacienda Inn Blog, where flavor meets <br>inspiration! Here, we share more than just recipes; we bring
+                    <br>you behind the scenes of our kitchen introduce you to our <br>culinary team, and offer a taste 
+                    of the stories behind our <br>dishes. Each post is crafted with the same passion we put <br>into every meal
+                    ,giving you a deeper connection to the food <br>we serve."</p>
+            </div>  
+            <div id="pages-content">
+                <div class="hero">
+                    <div class="hero-content">
+                        <div class="play-button"></div>
+                        <h1 class="hero-title">Feel the authentic &<br>original taste from us</h1>
+                    </div>
+                </div>
+    
+                
+                <div class="reservation">
+                    <img class= "Image-reservation" src="pictures\reservation.jpeg" alt="reservation">
+                </div>
+            </div>
+
+        </section>
+
+        <section id="contact">
+            <div class="background-menu">
+                <div class="top-bar">
+                    <p><i class="fa fa-phone" style="font-size: 15px;"></i> (414) 857 - 0107</p>
+                    <p><i class="fa fa-envelope" style="font-size: 15px;"></i> haciendainn@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <p id="first-paragraph">Contact Us</p>
+                <p id="second-paragraph">The most important thing for us is to give you the comfortable dining <br>experience</p>
+            
+            </div>
+            <div id="info">
+            <h1 id="info-contact">Come And Visit us</h1>
+            <p>(414) 857-0107</p>
+            <p>Hacienda Inn</p>
+            <p>33 magallanes st, Lucena, 4301 Quezon</p>
+        </div>
+                
+        <div>
+            <a href="https://www.facebook.com/HaciendaInnRestaurant?mibextid=ZbWKwL" target=_blank>
+                <img id="placing" src="pictures\FB page.png" height="300" alt="This the fb page" title="Click The picture to take you to the FB Page">
+            </a>
+            <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fmaps.apple.com%2F%3Faddress%3DQuezon%2520Avenue%252C%2520Barangay%25201%252C%2520Lucena%252C%25204300%2520Quezon%252C%2520Philippines%26auid%3D12802228005832790937%26ll%3D13.933341%252C121.612692%26lsp%3D9902%26q%3DHacienda%2520Inn%26t%3Dm&h=AT3mYOCLdO5zoaXJTRB89kVkrt-DGhXvXL7u05WMSGSAvi8_zmQSs1f9ZcWP2AJ_eCfrxZ3afAErBEnAk51QIdX-5WIuzza1VZJRVcaKs1pfY3rhgtFrZiB4EZ_5TLTmT9hYAQ" target=_blank>            
+                <img id="Adress" src="pictures/Adress ss.png" height="300" alt="this is the adress" title="Click the picture this will take you to the google map">
+            </a>
+        </div>
+    
+        <div class="contact-container">
+            <form>
+                <input id="person" type="text" placeholder="Name" required>
+                <input id="gmail" type="text" placeholder="Email Adress" required>
+                <input id="mess" type="text" placeholder="Message" required>
+                <input id="sub" type="submit">
+            </form>
+        </div> 
+    
+    
+        </section>
+
+        <footer class="footer">
+            <div>
+                <h1 id="footer-name">Hacienda<br>Inn.</h1>
+                <p id="footer-text">In the new era of technology we look in<br>the future with centainty
+                and pride for <br>our company</p>
+                <p id="credits">© 2024 Inc. All rights Reserved</p>
+            </div>
+            
+            <div id="footer-page">
+                <p id="footer-header"><b>Pages</b></p>
+                <p>Home</p>
+                <p>About</p>
+                <p>Menu</p>
+                <p>Pricing</p>
+                <p>Blog</p>
+                <p>Contact</p>
+                <p>Delivery</p>
+            </div>
+            <div id="footer-utility">
+                <p id="footer-header"><b>Utility pages</b></p>
+                <p>Start here</p>
+                <p>Password Protected</p>
+                <p>404 not found</p>
+                <p>License</p>
+                <p>View more</p>
+            </div>
+            <div id="footer-pics">
+                <p id="foot-text"><b>Follow us on Instagram</b></p>
+                <div id="insta-image">
+                    <img src="pictures/footer-habhab.jpeg" alt="habhab">
+                    <img src="pictures/footer-chami.jpg" alt="chami">
+                </div>
+                <div id="insta-image">
+                    <img src="pictures\footer-bbq.jpg" alt="bbq">
+                    <img src="pictures\footer-siopao.jpg" alt="Siopao" id="siopao">
+                </div>
+            </div>
+            
+        </footer>
+    
+        <script src="script.js"></script>
+
+    </body>
+</html>

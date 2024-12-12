@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap');
+        
+#log-in {
+    background-image: url('background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 70%; 
+    height: 40rem; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin: 50px auto; 
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 50px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 50%;
+    max-width: 300px; 
+    text-align: left;
+    position: absolute; 
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    height: 350px;
+    backdrop-filter: blur(10px);
+    border: 2px solid white;
+}
+.reg-container{
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 50px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 50%; 
+    max-width: 400px; 
+    text-align: left;
+    position: absolute; 
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    height: 500px;
+    backdrop-filter: blur(10px);
+    border: 2px solid white;
+}
+.reg-container h2{
+    text-align: center;
+    margin: 10px;
+    padding-right: 12px;
+    padding-bottom: 12px;
+}
+
+.input-group {
+    width: 250px;
+    margin-bottom: 20px;
+    position: relative;
+    
+}
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    padding-left: 40px; /* Space for the icon on the left */
+    border-radius: 6px;
+    border: none;
+    background-color: #222;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    background-repeat: no-repeat;
+    background-position: 10px center; /* Icon placement */
+}
+
+
+/* Email icon for the username input */
+#username {
+    background-image: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/svgs/solid/envelope.svg');
+    background-size: 18px; /* Icon size */
+    background-position: 10px center; /* Position the icon inside */
+}
+
+/* Password icon for the password input */
+#password {
+    background-image: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/svgs/solid/lock.svg');
+    background-size: 18px; /* Icon size */
+    background-position: 10px center; /* Position the icon inside */
+}
+
+label {
+    font-size: 18px;
+    color: #ddd;
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 25px;
+    border: none;
+    background-color: #D9D9D9;
+    color: black;
+    font-size: 16px;
+    outline: none;
+    margin-bottom: 10px;
+    font-family: 'Abhaya Libre', serif;
+    
+}
+input[type="password"]{
+    width: 100%;
+    padding: 12px;
+    border-radius: 25px;
+    border: none;
+    background-color: #D9D9D9;
+    color: black;
+    font-size: 16px;
+    outline: none;
+    font-family: 'Abhaya Libre', serif;
+}
+
+input::placeholder {
+    color: black;
+}
+
+button[type="submit"] {
+    width: 100px;
+    padding: 14px;
+    border-radius: 25px;
+    border: none;
+    background-color: #FFB90A;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+    margin-left: 30px;
+    text-decoration: none;
+    
+}
+
+button[type="submit"]:hover {
+    background-color: #ff9a00;
+}
+
+.signup-link {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.signup-link a {
+    color: #FFB90A;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+.login-container h2{
+    margin-top: 10px;
+    margin-bottom: 35px;
+    font-family: 'Playfair Display';
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 2rem;
+}
+.remember-me {
+    display: flex;
+    align-items: center;
+}
+
+.remember-me input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: #FFB90A; 
+}
+
+.remember-me label {
+    color: #ddd;
+    font-size: 14px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+#logo{
+    text-align: left; 
+    flex: 1;
+    margin-left: 10%;
+}
+#login-logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 0; 
+}
+
+#logo h2 {
+    font-size: 60px;
+    color: white;
+    margin-top: 0; 
+    margin-bottom: 0;
+    line-height: 1.2;
+    font-family: 'Playfair Display';
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.social-icons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px; 
+    font-size: 24px; 
+    color: white; 
+    text-decoration: none; 
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ff9a00; 
+}
+.condition {
+    display: flex;
+    align-items: center;
+}
+
+.condition input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: #FFB90A;
+    margin-left: 70px;
+}
+
+.condition label {
+    color: #ddd;
+    font-size: 12px;
+    cursor: pointer;
+
+}
+#regUsername {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 55px;
+
+}
+#regEmail{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 55px;
+}
+#regBday{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 55px;
+}
+#regPassword{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 55px;
+}
+#confirmPassword{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 55px;
+}
+.signupBtn {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.signupBtn button {
+    padding: 10px 20px; 
+    background-color: #ffb90A; 
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 50px;
+}
+
+.signupBtn p {
+    margin-top: 10px; 
+    color: #ddd; 
+    font-size: 14px;
+    padding-right: 25px;
+}
+.social-icons-register {
+    text-align: center;
+    margin-top: 0;
+    margin-right: 10px;
+}
+
+.social-icons-register a {
+    margin: 0 10px; 
+    font-size: 24px; 
+    color: white; 
+    text-decoration: none; 
+    transition: color 0.3s ease;
+}
+
+.social-icons-register a:hover {
+    color: #ff9a00; 
+}
+#login-text{
+    text-decoration: none;
+    color: white;
+}

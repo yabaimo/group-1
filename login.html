@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="login.css">
+    <style>
+        body{
+            background-color: gray;
+        }
+    </style>
+    
+
+    <title>Log in Trial</title>
+</head>
+<body>
+    <section id="login-form">
+        <!-- Background div for login -->
+        <div id="log-in" style="display: flex; align-items: center; gap: 0;">
+            <!-- Logo Section -->
+            <div id="logo">
+                <img src="menu-pics/hacienda-inn-logo.png" alt="logo" id="login-logo">
+                <h2><i>Hacienda <br> Inn</i></h2>
+            </div>
+            <!-- Login Form Container -->
+            <div class="login-container" id="loginFormContainer" style="flex: 2; display: block;">
+                <h2><i>Login</i></h2>
+                <form id="loginForm" onsubmit="return validateLoginForm()">
+                    <div class="input-group">
+                        <input type="text" id="username" name="username" placeholder="Email :" required>
+                        <span id="usernameError" style="color: red; font-size: 12px;"></span>
+                    </div>  
+                    <div class="input-group">
+                        <input type="password" id="password" name="password" placeholder="Password :" required>
+                        <span id="passwordError" style="color: red; font-size: 12px;"></span>
+                    </div>
+                    <div class="remember-me">
+                        <input type="checkbox" id="rememberMe" name="rememberMe">
+                        <label for="rememberMe">Remember Me</label>
+                        <p style="color: #ddd; font-size: 14px; margin-left: 50px;">Forget Password</p>
+                    </div>
+                    <div class="submit-group">
+                        <button type="submit"><a href="index.html" target="_self" id="login-text">Login</a></button>
+                        <button type="submit" onclick="showRegistrationForm()">Sign Up</button>
+                    </div>
+                </form>
+  
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://google.com" target="_blank"><i class="fab fa-google"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        
+    
+
+            <div class="reg-container" id="registrationFormContainer" style="display: none;">
+                <h2>Sign Up</h2>
+                <form id="registrationForm" onsubmit="return validateRegistrationForm()">
+                    <div class="input-group">
+                        <input type="email" id="regUsername" name="username" placeholder="Username:" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="regEmail" name="email" placeholder="Email:" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="regBday" name="bday" placeholder="Birthday:00/00/00:" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="regPassword" name="password" placeholder="Password:" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password:" required>
+                    </div>
+                    <div class="condition">
+                        <input type="checkbox" id="condition" name="condition">
+                        <label for="condition">I agree with the terms and conditions</label>
+                    </div>
+                    <div class="signupBtn">
+                        <button type="submit"><a href="#loginFormContainer"></a>Sign Up</button>
+                        <p>or login with</p>
+                    </div>
+                    <div class="social-icons-register">
+                        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://google.com" target="_blank"><i class="fab fa-google"></i></a>
+                        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>

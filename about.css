@@ -1,0 +1,128 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 200px;
+  }
+  
+  .image-section {
+    position: relative;
+    flex: 1;
+    max-width: 50%;
+    padding: 10px;
+  }
+  
+  .image-section img {
+    width: 100%;
+    border-radius: 20px;
+  }
+  
+  .contact-box {
+    position: absolute;
+    bottom: 10px;
+    right: 3px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-box h3 {
+    margin: 0 0 10px;
+    font-size: 1.2em;
+    font-size: medium;
+    color: #333;
+  }
+  
+  .contact-box p {
+    margin: 5px 0;
+  }
+  
+  .text-section {
+    flex: 1;
+    max-width: 50%;
+    padding: 20px;
+  }
+  
+  .text-section h1 {
+    font-size: 8rem;
+    margin-bottom: 15px;
+  }
+  
+  .text-section p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+@media screen and (max-width: 768px) {
+.container {
+      flex-direction: column;
+}
+  
+    .image-section,
+    .text-section {
+      max-width: 100%;
+    }
+  }
+.container-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: auto;
+}
+
+.content {
+    max-width: 50%;
+    padding-top: 10px;
+    padding-left: 200px;
+}
+
+.content h1 {
+    font-size: 2.5rem;
+    color: #4a4a4a;
+}
+
+.content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+    margin: 20px 0;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.stat-box {
+    background-color: #f0e9df;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.stat-box h2 {
+    font-size: 2rem;
+    color: #4a4a4a;
+}
+
+.stat-box p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.image-container {
+    max-width: 40%;
+    padding-right: 300px;
+    padding-top: 10px;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

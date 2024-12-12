@@ -1,0 +1,105 @@
+#placing{
+    position: relative;
+    left: 960px;
+    bottom: 100px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-right: 10px;
+    
+}
+#Adress{
+    position: relative;
+    left: 70px;
+    bottom: 100px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#contentcontact{
+    text-align: center;
+}
+#info{
+    position: relative;
+    top: 190px;
+    left: 60px;
+    border: 2px solid black;
+    width: 25rem;
+}
+#extension{
+    position: relative;
+    top: 190px;
+    left: 90px;
+    background-color: gray;
+}
+#info-contact{
+    position: relative;
+    left: 60px;
+}
+
+#person{
+    position: relative;
+    left: 25%;
+    border-radius: 20px;
+    width: 50%;
+    height: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    color: black;
+   
+}
+#gmail{
+    position: relative;
+    left: 25%;
+    border-radius: 20px;
+    width: 50%;
+    height: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    color: black;
+
+}
+#mess{
+    position: relative;
+    left: 25%;
+    border-radius: 20px;
+    width: 50%;
+    height: 200px;
+    margin-top: 10px;
+    margin-bottom: 200px;
+    background-color: white;
+    color: black;
+  
+}
+#sub{
+    position: relative;
+    right: 7.5%;
+    top: 190px;
+    border-radius: 20px;
+    height: 80px;
+    width: 200px;
+    margin-top: 50px;
+    margin-bottom: 500px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.contact-container input{
+    border:2px solid #FF120A;
+    color: #FF120A;
+    
+    
+    
+}
+.contact-container input::placeholder{
+    color: #FF120A;
+    
+    
+}
+
+
+

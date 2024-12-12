@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Slider</title>
+    <style>
+        /* Flex container for reviews */
+        #recent-review {
+            margin-top: 130px;
+            display: flex;
+            overflow: hidden; /* Hide reviews that are outside the container */
+            position: relative;
+            width : 100%; /* Adjust the width based on how many reviews you want to show at once */
+        }
+
+        /* The wrapper that contains the review items */
+        .review-wrapper {
+            display: flex;
+            width: max-content; /* Ensure the container grows with reviews */
+            animation: scrollWithPause 20s linear infinite; /* Continuous scrolling animation */
+        }
+
+        /* Individual review */
+        .malupiton-review {
+            height: 470px;
+            width: 400px;
+            border-radius: 25px;
+            background-color: #F3F3F3;
+            margin-left: 50px;
+            display: inline-block;
+        }
+
+        /* Styling the text and images */
+        .malupiton-review p {
+            font-size: 27px;
+            margin-right: 20px;
+        }
+
+        .malupiton {
+            margin-right: 250px;
+            border-radius: 100px;
+            height: 130px;
+            width: 130px;
+        }
+
+        /* Keyframe animation for continuous sliding */
+        @keyframes scrollWithPause {
+            0% {
+                transform: translateX(0); /* Start at the initial position */
+            }
+            100% {
+                transform: translateX(-50%); /* Move left by half of the review-wrapper's width */
+            }
+        }
+
+        /* Ensure seamless looping */
+        .review-wrapper .malupiton-review {
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="recent-review">
+        <div class="review-wrapper">
+            <!-- Original reviews -->
+            <div class="malupiton-review">
+                <img src="pictures/malupiton.jpg" alt="malupiton" class="malupiton">
+                <h1 class="review-name">Malupiton</h1>
+                <p>Great food and good vibes! Perfect for laughs with friends. Just don't be shocked by the bill!</p>
+            </div>
+            <div class="malupiton-review">
+                <img src="pictures/jobert.jpg" alt="jobert" class="malupiton">
+                <h1 class="review-name">Jobert Rosh</h1>
+                <p>It's a beautiful place.. lovely creative tasty Chami.. Siopao are to die for!</p>
+            </div>
+            <div class="malupiton-review">
+                <img src="pictures/otlum.jpg" alt="mima" class="malupiton">
+                <h1 class="review-name">Mima Otlum</h1>
+                <p>Has become my regular place to buy Chami. Wonderful taste and economical price.</p>
+            </div>
+            <div class="malupiton-review">
+                <img src="pictures/josh.jpg" alt="josh" class="malupiton">
+                <h1 class="review-name">Josh Mojica</h1>
+                <p>It's a good place for a budget foodie. The Pancit and desserts are my choice here.</p>
+            </div>
+            <div class="malupiton-review">
+                <img src="pictures/beluga.jpg" alt="beluga" class="malupiton">
+                <h1 class="review-name">Beluga</h1>
+                <p>My favorite place. Fresh ingredients with a catalog to customize your food.</p>
+            </div>
+            <div class="malupiton-review">
+                <img src="pictures/trevor.jpg" alt="Trevor" class="malupiton">
+                <h1 class="review-name">Trevor</h1>
+                <p>Good place to hang out with friends and family. Very economical and great food quality.</p>
+            </div>
+            <!-- Duplicate reviews for seamless scrolling -->
+            <div class="malupiton-review">
+                <img src="pictures/malupiton.jpg" alt="malupiton" class="malupiton">
+                <h1 class="review-name">Malupiton</h1>
+                <p>Great food and good vibes! Perfect for laughs with friends. Just don't be shocked by the bill!</p>
+            </div>
+            <div class="malupiton-review">
+                <img src="pictures/jobert.jpg" alt="jobert" class="malupiton">
+                <h1 class="review-name">Jobert Rosh</h1>
+                <p>It's a beautiful place.. lovely creative tasty Chami.. Siopao are to die for!</p>
+            </div>
+            <div class="malupiton-review">
+                <img src="pictures/otlum.jpg" alt="mima" class="malupiton">
+                <h1 class="review-name">Mima Otlum</h1>
+                <p>Has become my regular place to buy Chami. Wonderful taste and economical price.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
